@@ -1,0 +1,18 @@
+jwt_api: acme_orgcd934f501a8f4b38a1e041d4e94fa42c
+
+jwt_api_kid:
+{
+    "key": "acme_org09c90216460840d3914ff9543576749a",
+    "status": "ok",
+    "action": "added",
+    "key_hash": "9b649c90"
+}
+
+The jwt_data segment has to be in the key and contains a secret that is not base
+64 encoded according to 
+https://community.tyk.io/t/individual-jwt-secrets-key-not-authorized-signature-is-invalid/4006
+
+The secret has to be in kid or the kid in JWT header?????
+What should the secret be?? The HMAC secret?
+
+

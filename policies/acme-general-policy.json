@@ -1,0 +1,81 @@
+{
+  "_id": "",
+  "id": "acme-general-policy",
+  "name": "General policy for acme wih rate limit and quota",
+  "org_id": "acme_org",
+  "rate": 100,
+  "per": 1,
+  "quota_max": 10000,
+  "quota_renewal_rate": 3600,
+  "throttle_interval": 0,
+  "throttle_retry_limit": 0,
+  "max_query_depth": 0,
+  "access_rights": {
+    "jwt_api": {
+      "api_name": "jwt_api",
+      "api_id": "jwt_api",
+      "versions": [
+        "Default"
+      ],
+      "allowed_urls": [],
+      "restricted_types": null,
+      "allowed_types": null,
+      "limit": {
+        "rate": 5,
+        "per": 20,
+        "throttle_interval": 0,
+        "throttle_retry_limit": 0,
+        "max_query_depth": 0,
+        "quota_max": 0,
+        "quota_renews": 0,
+        "quota_remaining": 0,
+        "quota_renewal_rate": 0
+      },
+      "field_access_rights": null,
+      "disable_introspection": false,
+      "allowance_scope": ""
+    },
+    "jwt_api_kid": {
+      "api_name": "jwt_api_kid",
+      "api_id": "jwt_api_kid",
+      "versions": [
+        "Default"
+      ],
+      "allowed_urls": [],
+      "restricted_types": null,
+      "allowed_types": null,
+      "limit": {
+        "rate": 5,
+        "per": 20,
+        "throttle_interval": 0,
+        "throttle_retry_limit": 0,
+        "max_query_depth": 0,
+        "quota_max": 0,
+        "quota_renews": 0,
+        "quota_remaining": 0,
+        "quota_renewal_rate": 0
+      },
+      "field_access_rights": null,
+      "disable_introspection": false,
+      "allowance_scope": ""
+    }
+  },
+  "hmac_enabled": false,
+  "enable_http_signature_validation": false,
+  "active": true,
+  "is_inactive": false,
+  "tags": [
+    "acme general policy"
+  ],
+  "key_expires_in": 0,
+  "partitions": {
+    "quota": false,
+    "rate_limit": false,
+    "complexity": false,
+    "acl": false,
+    "per_api": false
+  },
+  "last_updated": "",
+  "meta_data": null,
+  "graphql_access_rights": null
+}

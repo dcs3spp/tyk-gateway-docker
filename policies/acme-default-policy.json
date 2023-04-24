@@ -1,0 +1,32 @@
+{
+  "_id": "",
+  "id": "acme-default-policy",
+  "name": "Default policy for acme apis",
+  "org_id": "acme_org",
+  "rate": 5,
+  "per": 20,
+  "quota_max": 10000,
+  "quota_renewal_rate": 3600,
+  "throttle_interval": 0,
+  "throttle_retry_limit": 0,
+  "max_query_depth": 0,
+  "access_rights": {},
+  "hmac_enabled": false,
+  "enable_http_signature_validation": false,
+  "active": true,
+  "is_inactive": false,
+  "tags": [
+    "acme general policy"
+  ],
+  "key_expires_in": 0,
+  "partitions": {
+    "quota": false,
+    "rate_limit": false,
+    "complexity": false,
+    "acl": false,
+    "per_api": false
+  },
+  "last_updated": "",
+  "meta_data": null,
+  "graphql_access_rights": null
+}
